@@ -9,14 +9,18 @@
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.1.2",
-    "react-scripts": "1.0.14",
+    "react-scripts": "1.1.1",
     "material-ui": "^0.20.0",
-    "react-material-icons": "^1.0.3"
+    "react-material-icons": "^1.0.3",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
